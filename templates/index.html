@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Vaksh-DOC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="icon" href="img/lgg.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+  <style>
+    
+    .body1 {
+      background-image: url('static/images/brst.jpg');
+     
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); 
+   position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: white;
+  
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 30px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+    /*  button */
+    .btn1{
+    color: #494949 !important;
+    width: 300px;
+    transition: all 0.4s ease 0s;
+    }
+    
+    .btn1:hover {
+    color: #ffffff !important;
+    background: #40D2D3;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+  .box{
+      width: 90vw;
+      height: 280px;
+      background-image: url('static/images/vkbg.jpg');
+      background-size: cover;
+      transform: translate(5%,25%);
+      font-weight: bold;
+      opacity: 0.6;
+      border-radius: 12px 12px 12px 12px;
+      margin-top: -50px;
+  }  
+  .bx2{
+    width: 70vw;
+    height: 40px;
+     margin-top: 20px;
+   background: linear-gradient(to right, #3494e6, #ec6ead);
+   border-radius: 5px 5px 6px 6px;
+  }
+@media (max-height:650px){
+  .box { height: 550px;
+    font-size: 20px;
+    margin-top: -90px;
+   }
+   form{
+    margin-top: 150px;
+   }
+}
+ @media (max-width:480px){
+  .box { height: 640px;
+    font-size: 20px;
+    margin-top: -90px;
+   }
+   form{
+    margin-top: 163px;
+   }
+}
+/*
+   team*/
+
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20vw;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-1 {
+  padding: 0 22px;
+}
+
+.container-1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.fa {
+  padding: 1px;
+  font-size: 30px;
+  width: 33px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 35%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github{
+ background:black ;
+ color: white;
+  }
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 30%;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie';
+  margin: 0;
+}
+
+/* logo */
+
+.footer-distributed .footer-left img{
+  width: 30%;
+}
+
+.footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p, pre{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #e0ac1c;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <img src="static/images/lgg.jpg" a href="#" height="50px" weight="100px" alt="Vaksh-DOC" style="margin-top: -10px;">
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="#"><b>Home</b></a>
+    <a href="#aboutus"><b>About Us</b></a>
+    <a href="https://github.com/manav88/VAKSH-DOC" target="_blank"><b>GitHub</b></a>
+   
+  </div>
+</div>
+     
+  <div class="body1">        
+      
+
+
+
+
+  
+<div class="box">
+
+
+<h2 style="text-align:center;color: white;text-shadow: 1px 1px 1px #97F2EE;background:black;">VAKSH-DOC (Detection Of Cancer)</h2><br>
+ <h4 style="text-align:center;color: #F6F858;text-shadow: px 2px 4px white;">VAKSH-DOC uses Machine Learning Algorithms to predict the Cancer of Breast.It implements various deep learning libraries to build Robust and Efficient Model which can provide you Fast and More than 98% Accurate Results.</h4>
+<br><h3 style="text-align:center;color: white;text-shadow: 1px 1px 1px #97F2EE;background:black;">Technologies Used</h3><br>
+<h4 style="text-align:center;color: #F6F858;text-shadow: 8px 1px 8px white;"><center ><p style="color:#F6F858">PYTHON <b style="color:#F91937;"> HTML</b>  CSS  <b style="color:#F91937;">JAVASCRIPT</b>  FLASK  <b style="color:#F91937 ;">MachineLearning-Libraries</b><br>To Be Continued...</p></center></h4>
+
+
+
+</div>
+
+  
+    <!-- Get input -->
+    <center>
+    <form action="{{ url_for('predict')}}"method="post">
+
+        <h1 style="margin-top: 80px;font-family: 'Roboto Slab', serif;text-shadow: 1px 1px 2px #33FFFD;background: #463B57;color:white;">Enter The value Of Features</h1>
+        
+      <input type="text" name="mean_radius" placeholder="mean radius" required="required" style="box-shadow: 10px 10px 5px grey;margin:5px;" />
+        <input style="box-shadow: 10px 10px 5px grey;margin:5px;" type="text" name="mean_texture" placeholder="mean texture" required="required" />
+    <input style="box-shadow: 10px 10px 5px grey;margin:5px;" type="text" name="mean_perimeter" placeholder="mean perimeter" required="required" />
+    <input style="box-shadow: 10px 10px 5px grey;margin:5px;" type="text" name="mean_area" placeholder="mean area" required="required" />
+        <input style="box-shadow: 10px 10px 5px grey;margin:5px;" type="text" name="mean_smoothness" placeholder="mean smoothness" required="required" />
+    <input style="box-shadow: 10px 10px 5px grey;margin:5px;" type="text" name="mean_compactness" placeholder="mean compactness" required="required" />
+    <br>
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="mean_concavity" placeholder="mean concavity" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="mean_concave_points" placeholder="mean concave points" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="mean_symmetry" placeholder="mean symmetry" required="required" />
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="mean_fractal_dimension" placeholder="mean fractal dimension" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="radius_error" placeholder="radius error" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="texture_error" placeholder="texture error" required="required" />
+    <br>
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="perimeter_error" placeholder="perimeter error" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="area_error" placeholder="area error " required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="smoothness_error" placeholder="smoothness error" required="required" />
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="compactness_error" placeholder="compactness error" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="concavity_error" placeholder="concavity error" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="concave_points_error" placeholder="concave points error" required="required" />
+      <br>
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="symmetry_error" placeholder="symmetry error" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="fractal_dimension_error" placeholder="fractal dimension error" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_radius" placeholder="worst radius" required="required" />
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_texture" placeholder="worst texture" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_perimeter" placeholder="worst perimeter" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_area" placeholder="worst area" required="required" />
+    <br>
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_smoothness" placeholder="worst smoothness" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_compactness" placeholder="worst compactness" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_concavity" placeholder="worst concavity" required="required" />
+      <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_concave_points" placeholder="worst concave points" required="required" />
+        <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_symmetry" placeholder="worst symmetry" required="required" />
+    <input style="box-shadow: 7px 7px 4px grey;margin:5px;" type="text" name="worst_fractal_dimension" placeholder="worst fractal dimension" required="required" />
+        <br>
+        <br>
+        
+        <!-- Submit -->
+      
+            <button type="submit" class="btn btn-primary btn1 "><strong>Predict Cancer</strong></button></a>
+      
+        
+    </form>
+    </center>
+   
+   <!--  output  --> 
+   <center>
+   <div class="bx2" id="#pre">
+       
+   <h2 >{{ Result}}</h2>
+       
+   </div>
+</center>
+
+   <section id="aboutus">
+   <!--  team html -->
+  <h2 align="center" style="margin-top: 80px; font-family: 'Roboto Slab', serif;text-shadow: 2px 1px 2px #33FFFD;background: linear-gradient(to right, #8e0e00, #1f1c18);color:white; font-style: bold;"> Meet The Team ZER0 </h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static/images/man.jpeg" alt="Leader" style="width:100%" height="203px">
+      <div class="container-1">
+        <h2>Manav M</h2>
+        <p class="title">Medical,Machine Learning</p>
+       <center> <a href="https://www.linkedin.com/in/manav-88" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://www.github.com/manav88" class="fa fa-github" target="_blank"></a></center>
+       
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="column">
+    <div class="card">
+      <img src="static/images/khun.jpeg" alt="Khunt"style="width:100%" height="200px">
+      <div class="container-1">
+        <h2>Aryan Khunt</h2>
+        <p class="title">Web Designing</p>
+       <center>  <a href="https://www.linkedin.com/in/aryan17" class="fa fa-linkedin" target="_blank"></a>
+         <a href="https://www.github.com/aryankhunt30" class="fa fa-github" target="_blank"></a></center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="static/images/bhuva.jpeg" alt="Prince" style="width:100%" height="200px">
+      <div class="container-1">
+        <h2>Prince Bhuva</h2>
+        <p class="title">Web Backend</p>
+        <center> <a href="https://www.linkedin.com/in/prince-bhuva-a60a511b4" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://www.github.com/Prince1202" class="fa fa-github" target="_blank"></a></center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="static/images/sash.jpeg" alt="Shashi" style="width:100%"height="200px">
+      <div class="container-1">
+        <h2>Shashi Patel</h2>
+        <p class="title">Frontend</p>
+        <center> <a href="https://www.linkedin.com/in/shashibhushan-sanghani-50333821b" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://www.github.com/shashibhushan2111" class="fa fa-github" target="_blank"></a></center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="static/images/bhin.jpeg" alt="Bhin" style="width:100%" height="200px">
+      <div class="container-1">
+        <h2>Harsh Kumar</h2>
+        <p class="title">Frontend</p>
+        <center> <a href="https://www.linkedin.com/in/harshkumar-bhingradiya-966b4a1b4" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://www.github.com/Har1406" class="fa fa-github" target="_blank"></a></center>
+     </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <img src="static/images/lgg.jpg" a href="#" alt="logo">
+        <h3>Team  <span>ZER0</span></h3>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <p>© 2022 <b style="color: #1A96D6;">VAKSH</b>-DOC | Code licensed <a href="https://github.com/manav88/VAKSH-DOC/blob/main/LICENSE" target="_blank" style="color: #194EF9;"><u>MIT</u></a></p><br>
+          <pre align="center">         Made With ❤️ In INDIA</pre>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>Breast Cancer Detection Project</span>
+          <span style="font-family: 'Courier New', Courier, monospace;">  Using <b style="color: #1A96D6;"> Machine Learning</span>
+
+          <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#aboutus">About</a>
+          |
+          <a href="https://github.com/manav88/VAKSH-DOC" target="_blank">Github</a>
+        </p>
+          </p>
+        
+      </div>
+    </footer>
+
+
+
+
+</body>
+</html>
